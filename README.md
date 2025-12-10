@@ -21,6 +21,7 @@ The Missing-Persons & Human-Trafficking Alert System is an Oracle PL/SQL–based
 This project fulfills all 8 phases required for the PL/SQL Capstone: problem identification, modeling, database design, PL/SQL development, advanced programming, auditing, BI, and final documentation.
 
 🧩 Phase I – Problem Identification
+---
 ✔ Objectives
 
 Identify the real-world issue of missing-person tracking
@@ -38,6 +39,7 @@ Problem_Statement.pdf
 Presentation_Slides.pptx
 
 🏢 Phase II – Business Process Modeling
+---
 ✔ Objectives
 
 Model business processes related to missing-person reporting
@@ -55,6 +57,7 @@ Use Case Diagram
 Business_Process_Explanation.pdf
 
 🗂 Phase III – Logical Database Design
+---
 ✔ Objectives
 
 Produce ERD showing all entities and relationships
@@ -72,6 +75,7 @@ Data_Dictionary.xlsx
 Normalization_Report.pdf
 
 🛠 Phase IV – Database Creation
+---
 ✔ Objectives
 
 Create Oracle Pluggable Database (PDB)
@@ -89,6 +93,7 @@ users_roles.sql
 Database overview documentation
 
 🧱 Phase V – Table Implementation & Data Insertion
+---
 ✔ Objectives
 
 Convert logical model into physical SQL tables
@@ -108,6 +113,7 @@ validation_queries.sql
 Sample output screenshots
 
 🧮 Phase VI – PL/SQL Procedures, Functions, Packages & Cursors
+---
 ✔ Objectives
 
 Develop advanced PL/SQL logic for the system
@@ -131,6 +137,7 @@ cursors.sql
 Test results
 
 🔐 Phase VII – Advanced Programming, Triggers & Auditing
+---
 ✔ Objectives
 
 Enforce business rule restrictions:
@@ -154,6 +161,7 @@ Triggers (simple & compound)
 Audit test proof screenshots
 
 📊 Phase VIII – Final Documentation, BI & Presentation
+---
 ✔ Objectives
 
 Provide BI analysis using dashboards and KPIs
@@ -176,18 +184,28 @@ Full GitHub repository documentation
 
 📂 Repository Structure
 missing-persons-alert-system/
+
 │
 ├── Phase_I_Problem_Identification/
+
 ├── Phase_II_Business_Process_Modeling/
+
 ├── Phase_III_Logical_Database_Design/
+
 ├── Phase_IV_Database_Creation/
+
 ├── Phase_V_Table_Implementation/
+
 ├── Phase_VI_PL_SQL_Development/
+
 ├── Phase_VII_Triggers_Auditing/
+
 ├── Phase_VIII_Final_Documentation_BI/
+
 └── README.md  (this file)
 
 🚀 How to Run the Project
+___
 
 Clone the repository
 
@@ -200,6 +218,7 @@ Execute PL/SQL logic in Phase VI
 Enable triggers and auditing in Phase VII
 
 Use Phase VIII files for BI and final presentation
+---
 
 🏁 Conclusion
 

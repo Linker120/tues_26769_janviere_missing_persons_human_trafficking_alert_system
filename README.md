@@ -1,12 +1,17 @@
 .
 
 📘 Missing Persons & Human Trafficking Alert System
+---
 PL/SQL Capstone Project – AUCA
 
 Student: Akimana Janviere
+
 Student ID: 26769
+
 Course: Database Development with PL/SQL
+
 Lecturer: Eric Maniraguha
+
 Academic Year: 2025–2026
 
 🎯 Project Overview
@@ -207,5 +212,6 @@ This capstone project demonstrates advanced mastery of Oracle PL/SQL through a r
 ✔ Documentation & presentation readiness
 
 It is built for accuracy, automation, and real-life impact in public safety and human-trafficking prevention.
+
 Thank you for visiting my repository
 ---

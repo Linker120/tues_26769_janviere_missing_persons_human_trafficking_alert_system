@@ -1,0 +1,71 @@
+SELECT 
+    log_id,
+    table_name,
+    operation_type,
+    attempt_type,
+    attempt_day,
+    is_holiday,
+    TO_CHAR(operation_timestamp, 'YYYY-MM-DD HH24:MI:SS') AS timestamp,
+    SUBSTR(denial_reason, 1, 50) AS reason_preview
+FROM AUDIT_LOGS
+WHERE operation_timestamp >= SYSTIMESTAMP - INTERVAL '1' HOUR
+ORDER BY operation_timestamp DESC
+FETCH FIRST 20 ROWS ONLY;
+
+PROMPT
+PROMPT Test 6.2: Audit Summary by Attempt Type
+SELECT 
+    attempt_type,
+    attempt_day,
+    is_holiday,
+    COUNT(*) AS attempt_count,
+    COUNT(DISTINCT table_name) AS tables_affected
+FROM AUDIT_LOGS
+WHERE attempt_type IS NOT NULL
+GROUP BY attempt_type, attempt_day, is_holiday
+ORDER BY attempt_count DESC;
+
+PROMPT
+PROMPT Test 6.3: Denied Attempts Detail
+SELECT 
+    log_id,
+    table_name,
+    operation_type,
+    attempt_day,
+    is_holiday,
+    TO_CHAR(operation_timestamp, 'YYYY-MM-DD HH24:MI:SS') AS when_denied,
+    denial_reason
+FROM AUDIT_LOGS
+WHERE attempt_type = 'DENIED'
+ORDER BY operation_timestamp DESC
+FETCH FIRST 10 ROWS ONLY;
+
+PROMPT
+PROMPT ====================================================================
+PROMPT TEST 7: HOLIDAY MANAGEMENT VERIFICATION
+PROMPT ====================================================================
+PROMPT
+
+PROMPT Test 7.1: Upcoming Holidays (Next 60 Days)
+SELECT 
+    holiday_date,
+    TO_CHAR(holiday_date, 'DAY') AS day_name,
+    holiday_name,
+    holiday_type,
+    TRUNC(holiday_date - SYSDATE) AS days_until
+FROM PUBLIC_HOLIDAYS
+WHERE holiday_date BETWEEN TRUNC(SYSDATE) AND TRUNC(SYSDATE) + 60
+  AND is_active = 'Y'
+ORDER BY holiday_date;
+
+PROMPT
+PROMPT Test 7.2: Holiday Distribution by Type
+SELECT 
+    holiday_type,
+    COUNT(*) AS holiday_count,
+    MIN(holiday_date) AS first_holiday,
+    MAX(holiday_date) AS last_holiday
+FROM PUBLIC_HOLIDAYS
+WHERE is_active = 'Y'
+GROUP BY holiday_type
+ORDER BY holiday_count DESC;

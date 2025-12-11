@@ -1,5 +1,3 @@
-.
-
 📘 Missing Persons & Human Trafficking Alert System
 ---
 PL/SQL Capstone Project – AUCA
@@ -14,177 +12,24 @@ Lecturer: Eric Maniraguha
 
 Academic Year: 2025–2026
 
-🎯 Project Overview
+🚀 Project Overview
 
-The Missing-Persons & Human-Trafficking Alert System is an Oracle PL/SQL–based solution designed to automate reporting, tracking, matching, and alert generation for missing-person cases. The system integrates PL/SQL packages, triggers, auditing, and analytics to support law enforcement, agencies, and communities in responding quickly and accurately to potential human-trafficking incidents.
+The Missing Persons & Human Trafficking Alert System is an end-to-end Oracle PL/SQL project that automates the reporting, tracking, matching, and alert generation process for missing-person cases. The system includes:
 
-This project fulfills all 8 phases required for the PL/SQL Capstone: problem identification, modeling, database design, PL/SQL development, advanced programming, auditing, BI, and final documentation.
+Professional database design
 
-🧩 Phase I – Problem Identification
----
-✔ Objectives
+PL/SQL procedures, functions, packages
 
-Identify the real-world issue of missing-person tracking
+Triggers & auditing controls
 
-Define system purpose, context, and stakeholders
+Business intelligence dashboards
 
-Highlight BI and analytics potential
+Full documentation for all 8 phases
 
-Present the concept clearly in a PowerPoint
+This README combines ALL phases into one professional final document with real screenshot integration.
 
-Deliverables
-
-Problem_Statement.pdf
-
-Presentation_Slides.pptx
-
-🏢 Phase II – Business Process Modeling
----
-✔ Objectives
-
-Model business processes related to missing-person reporting
-
-Demonstrate workflow using BPMN and UML
-
-Describe actors and responsibilities
-
-Deliverables
-
-BPMN Process Diagram
-
-Use Case Diagram
-
-Business_Process_Explanation.pdf
-
-🗂 Phase III – Logical Database Design
----
-✔ Objectives
-
-Produce ERD showing all entities and relationships
-
-Normalize data to 3NF
-
-Build a data dictionary for all tables
-
-Deliverables
-
-ER_Diagram.png
-
-Data_Dictionary.xlsx
-
-Normalization_Report.pdf
-
-🛠 Phase IV – Database Creation
----
-✔ Objectives
-
-Create Oracle Pluggable Database (PDB)
-
-Configure tablespaces, user privileges, and environment
-
-Deliverables
-
-create_pdb.sql
-
-tablespaces.sql
-
-users_roles.sql
-
-Database overview documentation
-
-🧱 Phase V – Table Implementation & Data Insertion
----
-✔ Objectives
-
-Convert logical model into physical SQL tables
-
-Insert realistic test data (100–500 rows per major table)
-
-Validate data integrity
-
-Deliverables
-
-create_tables.sql
-
-insert_data.sql
-
-validation_queries.sql
-
-Sample output screenshots
-
-🧮 Phase VI – PL/SQL Procedures, Functions, Packages & Cursors
----
-✔ Objectives
-
-Develop advanced PL/SQL logic for the system
-
-Implement operations for matching, alerts, validations, and processing
-
-Use window functions and exception handling
-
-Deliverables
-
-procedures.sql
-
-functions.sql
-
-packages_spec.sql
-
-packages_body.sql
-
-cursors.sql
-
-Test results
-
-🔐 Phase VII – Advanced Programming, Triggers & Auditing
----
-✔ Objectives
-
-Enforce business rule restrictions:
-❌ No INSERT/UPDATE/DELETE on weekdays
-❌ No operations on upcoming public holidays
-
-Implement a complete audit logging system
-
-Add triggers and compound triggers for automation
-
-Deliverables
-
-Holiday management table
-
-Audit log table
-
-Restriction check function
-
-Triggers (simple & compound)
-
-Audit test proof screenshots
-
-📊 Phase VIII – Final Documentation, BI & Presentation
----
-✔ Objectives
-
-Provide BI analysis using dashboards and KPIs
-
-Document architecture, design decisions, and analytics queries
-
-Prepare final presentation slides
-
-Deliverables
-
-BI dashboards & KPIs
-
-Analytics SQL queries
-
-Architecture & data dictionary documentation
-
-Final_Presentation.pptx
-
-Full GitHub repository documentation
-
-📂 Repository Structure
+📂 Project Folder Structure
 missing-persons-alert-system/
-
 │
 ├── Phase_I_Problem_Identification/
 
@@ -201,36 +46,239 @@ missing-persons-alert-system/
 ├── Phase_VII_Triggers_Auditing/
 
 ├── Phase_VIII_Final_Documentation_BI/
+├── BI/
+│   ├── dashboard_kpis.png
 
-└── README.md  (this file)
+│   ├── dashboard_audit_activity.png
 
-🚀 How to Run the Project
-___
+│   ├── dashboard_sightings_trend.png
 
-Clone the repository
+│   ├── analytics_queries.sql
 
-Run Phase IV SQL scripts to create the database
+│   └── kpi_definitions.md
+└── README.md
 
-Run Phase V scripts to create tables and insert data
-
-Execute PL/SQL logic in Phase VI
-
-Enable triggers and auditing in Phase VII
-
-Use Phase VIII files for BI and final presentation
+🧩 PHASE I – Problem Identification
 ---
+✔ Contents
 
-🏁 Conclusion
+Problem_Statement.pdf
 
-This capstone project demonstrates advanced mastery of Oracle PL/SQL through a real-world, security-focused system involving:
+1–5 slide presentation
 
-✔ Database design
-✔ PL/SQL programming
-✔ Triggers & auditing
-✔ BI reporting
-✔ Documentation & presentation readiness
+📝 Summary
 
-It is built for accuracy, automation, and real-life impact in public safety and human-trafficking prevention.
+This phase defines:
 
-Thank you for visiting my repository
+The societal problem (missing persons & trafficking)
+
+Who the system serves (police, agencies, citizens)
+
+Why automation is required
+
+Expected outcomes
+
+🏢 PHASE II – Business Process Modeling
+---
+✔ Contents
+
+BPMN workflow diagram
+
+Use case diagram
+
+1-page business explanation
+
+📝 Summary
+
+The BPMN diagram shows the flow:
+Citizen → System → Validation → Sightings → Matching → Alert → Agency Response
+
+📸 Insert BPMN screenshot here:
+/screenshots/phase2/bpmn.png
+
+🗂 PHASE III – Logical Database Design
+---
+✔ Contents
+
+ER Diagram (full data model)
+
+Data dictionary
+
+Normalization report
+
+📸 Insert ERD screenshot here:
+/screenshots/phase3/erd.png
+
+📝 Summary
+
+Main tables include:
+USERS, AGENCIES, MISSING_PERSONS, SIGHTINGS, ALERTS, AUDIT_LOGS.
+
+🛠 PHASE IV – Database Creation
+---
+✔ Contents
+
+PDB creation script
+
+Tablespaces
+
+System user setup
+
+📸 Insert SQL Developer PDB screenshot:
+/screenshots/phase4/pdb.png
+
+🧱 PHASE V – Table Implementation & Data Insertion
+---
+✔ Contents
+
+CREATE TABLE scripts
+
+INSERT data (100–500 records per table)
+
+Validation queries
+
+📸 Screenshots (place inside /screenshots/phase5/)
+
+Missing persons data
+
+
+Sightings data
+
+
+Alerts data
+
+
+🧮 PHASE VI – PL/SQL Development
+---
+✔ Contents
+
+Procedures
+
+Functions
+
+Packages (spec + body)
+
+Cursors (explicit and loops)
+
+Window functions
+
+📸 Screenshots (place inside /screenshots/phase6/)
+
+Procedure execution
+
+
+Function return result
+
+
+Package call
+
+
+🔐 PHASE VII – Advanced Programming & Auditing
+---
+✔ Requirements
+
+Restrict INSERT/UPDATE/DELETE on:
+
+Weekdays
+
+Public holidays
+
+Automatic audit logging
+
+📸 Screenshots (place inside /screenshots/phase7/)
+
+Weekday restriction failure
+
+
+Holiday restriction failure
+
+
+Audit log entries
+
+
+📊 PHASE VIII – Business Intelligence Dashboards
+---
+✔ Files generated by the system:
+
+Located in /BI/
+
+Dashboard	File
+KPI Summary	dashboard_kpis.png
+Audit Activity	dashboard_audit_activity.png
+Sightings vs Alerts Trend	dashboard_sightings_trend.png
+KPI Definitions	kpi_definitions.md
+Analytical Queries	analytics_queries.sql
+📈 BI Dashboard Screenshots
+1️⃣ Executive KPI Dashboard
+
+Shows totals for:
+
+Users
+
+Agencies
+
+Missing persons
+
+Sightings
+
+Alerts
+
+Audit logs
+
+2️⃣ Audit Activity Dashboard
+--
+
+Tracks volume of audit logs per day.
+
+3️⃣ Sightings & Alerts Trend Dashboard
+--
+
+Shows 30-day trend correlation between sightings and alert generation.
+
+🔎 Analytical SQL Queries
+
+File: /BI/analytics_queries.sql
+
+Includes:
+
+daily sightings summary
+
+top locations
+
+average alert response time
+
+high-confidence match reports
+
+audit violation trends
+
+monthly reporting
+
+🧮 KPI Definitions
+
+File: /BI/kpi_definitions.md
+
+Examples:
+
+Missing persons count
+
+Resolved vs unresolved cases
+
+Average alert response duration
+
+Match accuracy percentage
+
+Audit compliance indicators
+
+🏁 Project Conclusion
+
+This project fully satisfies:
+✔ ALL 8 phases of the PL/SQL Capstone
+✔ Professional database & PL/SQL development
+✔ Security, auditing & restrictions
+✔ Real BI dashboards and analytical queries
+✔ Complete documentation
+
+The system is scalable, auditable, secure, and applicable to real-world public safety environments.
+
+THANK YOU FOR VISITING MY REPOSITORY.
 ---

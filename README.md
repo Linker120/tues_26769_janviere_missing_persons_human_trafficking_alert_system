@@ -208,7 +208,10 @@ Audit Activity	dashboard_audit_activity.png
 Sightings vs Alerts Trend	dashboard_sightings_trend.png
 KPI Definitions	kpi_definitions.md
 Analytical Queries	analytics_queries.sql
-📈 BI Dashboard Screenshots
+📈 BI Dashboard 
+---
+<img width="1002" height="649" alt="image" src="https://github.com/user-attachments/assets/f361ba73-79d9-46c5-b22d-bfbd3b47c687" />
+
 1️⃣ Executive KPI Dashboard
 
 Shows totals for:

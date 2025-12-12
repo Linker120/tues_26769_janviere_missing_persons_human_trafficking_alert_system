@@ -79,7 +79,7 @@ Why automation is required
 Expected outcomes
 
 🏢 PHASE II – Business Process Modeling
----
+----
 ✔ Contents
 
 BPMN workflow diagram

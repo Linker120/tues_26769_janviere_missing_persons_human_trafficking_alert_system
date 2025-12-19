@@ -204,7 +204,8 @@ Audit log entries
 
 📈 BI Dashboard 
 ---
-<img width="1002" height="649" alt="image" src="https://github.com/user-attachments/assets/f361ba73-79d9-46c5-b22d-bfbd3b47c687" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/941b6ffe-f91d-489e-9606-8c6e33925e65" />
+
 
 1️⃣ Executive KPI Dashboard
 

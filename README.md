@@ -161,13 +161,14 @@ Procedures
 
 Functions
 
-Packages (spec + body)
+Packages (spece + body)
 
 Cursors (explicit and loops)
 
 Window functions
 
-📸 Screenshots (place inside /screenshots/phase6/)
+![Function GET_ACTIVE_CASES_BY_PROVINCE](https://github.com/user-attachments/assets/e7b8dbc6-d113-42ba-a72b-336e785d0c52)
+
 
 Procedure execution
 

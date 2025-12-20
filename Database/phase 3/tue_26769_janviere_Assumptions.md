@@ -1,0 +1,40 @@
+# DESIGN ASSUMPTIONS & DECISIONS
+
+## 1. DATA MODEL ASSUMPTIONS
+- Each missing person has only one active case at a time
+- Sightings can be reported without knowing which case they relate to
+- Users can belong to only one agency (simplified for Phase I)
+- Location data will include GPS coordinates when available
+- Age calculations use date of birth when available, estimates otherwise
+
+## 2. BUSINESS RULE ASSUMPTIONS
+- Match confidence threshold = 0.7 (70%) for automatic alerts
+- Trafficking suspicion triggers HIGH priority automatically
+- Citizens can only view/modify their own reports
+- Police officers can view all reports in their jurisdiction
+- Administrators have full system access
+
+## 3. TECHNICAL ASSUMPTIONS
+- Oracle Database 19c or higher
+- All dates/times in server timezone (CAT - Central Africa Time)
+- UTF-8 character encoding for international names
+- Password hashing using SHA-256 with salt
+- Audit logs retained for minimum 7 years (compliance)
+
+## 4. SCALABILITY CONSIDERATIONS
+- Estimated 10,000+ missing person records annually
+- 50,000+ sighting reports annually
+- 100+ concurrent users during peak
+- 99.5% system availability required
+
+## 5. SECURITY ASSUMPTIONS
+- VPN required for remote access
+- Two-factor authentication for administrative users
+- Regular security audits and penetration testing
+- Data encryption at rest and in transit
+
+## 6. REPORTING ASSUMPTIONS
+- Daily automated reports to agency heads
+- Real-time dashboards for command centers
+- Monthly compliance reports for regulatory bodies
+- Ad-hoc query capability for investigators

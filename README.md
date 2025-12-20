@@ -229,11 +229,14 @@ Audit logs
 
 2️⃣ Audit Activity Dashboard
 --
+<img width="549" height="368" alt="image" src="https://github.com/user-attachments/assets/81cb3ce6-183d-4ba7-8b9e-7834320d3cae" />
 
 Tracks volume of audit logs per day.
 
 3️⃣ Sightings & Alerts Trend Dashboard
 --
+<img width="459" height="399" alt="image" src="https://github.com/user-attachments/assets/13f6288f-fb3e-49e7-aec1-017d163525cb" />
+
 
 Shows 30-day trend correlation between sightings and alert generation.
 

@@ -30,6 +30,7 @@ This README combines ALL phases into one professional final document with real s
 
 📂 Project Folder Structure
 missing-persons-alert-system/
+
 │
 ├── Phase_I_Problem_Identification/
 
@@ -46,7 +47,9 @@ missing-persons-alert-system/
 ├── Phase_VII_Triggers_Auditing/
 
 ├── Phase_VIII_Final_Documentation_BI/
+
 ├── BI/
+
 │   ├── dashboard_kpis.png
 
 │   ├── dashboard_audit_activity.png
@@ -56,6 +59,7 @@ missing-persons-alert-system/
 │   ├── analytics_queries.sql
 
 │   └── kpi_definitions.md
+
 └── README.md
 
 🧩 PHASE I – Problem Identification
@@ -277,10 +281,15 @@ Audit compliance indicators
 🏁 Project Conclusion
 
 This project fully satisfies:
+---
 ✔ ALL 8 phases of the PL/SQL Capstone
+
 ✔ Professional database & PL/SQL development
+
 ✔ Security, auditing & restrictions
+
 ✔ Real BI dashboards and analytical queries
+
 ✔ Complete documentation
 
 The system is scalable, auditable, secure, and applicable to real-world public safety environments.

@@ -125,6 +125,9 @@ Tablespaces
 System user setup
 
 <img width="986" height="556" alt="image" src="https://github.com/user-attachments/assets/c8abc63b-4153-461e-a6dd-2bc447139cc2" />
+
+Eracle_Enterprise_Manager(OEM)
+---
 <img width="1080" height="573" alt="image" src="https://github.com/user-attachments/assets/109714e9-e0ed-42a4-9c76-f196374ba437" />
 
 

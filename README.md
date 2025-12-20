@@ -191,7 +191,7 @@ Public holidays
 
 Automatic audit logging
 
-📸 Screenshots (place inside /screenshots/phase7/)
+![Function GET_HOLIDAY_NAME](https://github.com/user-attachments/assets/f3ee36d2-8dc4-4d94-928e-ebe08af8b3dc)
 
 Weekday restriction failure
 
